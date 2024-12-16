@@ -1,0 +1,101 @@
+body{
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    background-image: linear-gradient(to right top, #b4b6cc, #2c3038, #555a65, #828697, #01060d);
+    color: white;  
+}
+h1 {
+    text-align: center;
+    color: white;
+}
+h3 {
+   background-color: white; 
+   color: white;
+   text-align: center;
+}
+
+
+.c2{
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 30px;
+
+    border-radius: 8px;
+    margin-right: 150px;
+}
+/* Section contact */
+#contact {
+    padding: 20px;
+    max-width: 600px;
+    margin: 50px auto;
+    background: #536976;  
+    background: -webkit-linear-gradient(to right, #292E49, #536976);  
+    background: linear-gradient(to right, #292E49, #536976);
+    box-shadow: 10px 5px 5px black;
+    border-radius: 8px;
+    box-shadow: 10px 5px 5px black;
+}
+
+#contact h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #001a33;
+}
+
+/* Formulaire */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group label {
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #001a33;
+}
+
+.form-group input,
+.form-group textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    width: 100%;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    border-color: white;
+    outline: none;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+/* Bouton */
+button[type="submit"] {
+    background-color: #001a33;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+/* Responsiveness */
+@media (max-width: 600px) {
+    #contact {
+        margin: 20px;
+        padding: 15px;
+    }
+}

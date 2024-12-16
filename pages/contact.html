@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>mahdi__sahnoun/portfolio</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+  <script src="../assets/js/main.js"></script>
+
+  <!-- Favicons -->
+  <link href="../assets/img/cv_ph.jpg" rel="icon">
+ <link href="../assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+
+  <!-- Vendor CSS Files -->
+   
+  <link href="../assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="../assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="../assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="../assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="../assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Main CSS File -->
+  <link href="../assets/css/main.css" rel="stylesheet">
+  <link href="../assets/css/contact.css" rel="stylesheet">
+  <!-- Mail connection -->
+     <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+   (function(){
+      emailjs.init({
+        publicKey: "YNiJyhA_SV2QFEY9S",
+      });
+   })();
+    </script>
+</head>
+
+<body class="index-page">
+  <header id="header" class="header dark-background d-flex flex-column">
+    <i class="header-toggle d-xl-none bi bi-list"></i>
+    <div class="profile-img">
+      <img src="../assets/img/cv_ph.jpg" alt="Profile Picture" class="img-fluid rounded-circle">
+    </div>
+    <a href="index.html" class="logo d-flex align-items-center justify-content-center">
+      <h1 class="sitename">Mahdi Sahnoun</h1>
+    </a>
+    <div class="social-links text-center">
+      <a href="https://www.facebook.com/profile.php?id=100008328584083" class="facebook"><i class="bi bi-facebook"></i></a>
+      <a href="https://www.instagram.com/mahdi__sahnoun/" class="instagram"><i class="bi bi-instagram"></i></a>
+      <a href="https://www.linkedin.com/in/sahnoun-mahdi-34611b183/" class="linkedin"><i class="bi bi-linkedin"></i></a>
+    </div>
+    <nav id="navmenu" class="navmenu">
+      <ul>
+        <li><a href="../index.html" class="active"><i class="bi bi-house navicon"></i>Home</a></li>
+        <li><a href="../pages/about.html"><i class="bi bi-person navicon"></i> Parcours</a></li>
+        <li><a href="../pages/competance.html"><i class="bi bi-file-earmark-text navicon"></i> compétance</a></li>
+        <li><a href="../pages/stage.html"><i class="bi-person-workspace"><span class="ms-2"></span></i>Stage</a></li>
+        <li><a href="../pages/quiz.html"><i class="bi bi-controller"><span class="ms-2"></span></i> quiz</a></li>
+        <li><a href="../pages/contact.html"><i class="bi bi-envelope"><span class="ms-2"></span></i>Contact</a></li>
+
+      </ul>
+    </nav>
+  </header>
+</head>
+<body>
+<div class="c2">
+    <section id="contact" class="container">
+        <h2>Contact Moi</h2>
+        <form>
+            <div class="form-group">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="subject">Subject</label>
+                <input type="text" id="subject" name="subject" required>
+            </div>
+            <div class="form-group">
+                <label for="message">Message</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+            </div>
+            <button type="submit" onclick="sendMail()">Send</button>
+        </form>
+    </section>
+    
+</div>
+
+</body>
+</html>
+
+
